@@ -1,0 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); grid-template-rows: auto 1fr auto; gap: 20px;
+}
+
+header{
+    grid-column: 1/-1;
+    height: 100px;
+    align-content: center;
+}
+.logo{
+    background-color: #003057;
+    width: 13%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+}
