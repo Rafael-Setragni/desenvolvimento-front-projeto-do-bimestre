@@ -7,6 +7,13 @@
 body{
     display: grid;
     grid-template-rows: auto 1fr auto;
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 .header-part-cima{
     grid-column: 1/-1;
@@ -23,8 +30,7 @@ body{
 }
 .header-part-cima nav a{
     font-size: 15px;        
-    text-decoration: none;   
-    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+    text-decoration: none;    
     color: #003057;
 }
 .header-part-baixo{
@@ -54,7 +60,6 @@ body{
 .header-part-baixo nav a{
     font-size: 20px;        
     text-decoration: none;   
-    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
     color: #003057;
 }
 .header-part-baixo nav a:hover{
@@ -62,6 +67,9 @@ body{
 }
 
 /*main*/
+main{
+    margin-top: 132px;
+}
 .img-promo{
     grid-column: 1 / -1;
     width: 100%;
@@ -85,41 +93,115 @@ body{
     line-height: 34px;
     font-weight: 700;
     color: #003057;
-    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
 }
-
 .cards-div{
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    justify-self: center;
-    gap: 30px;
+    
 }
-.cards-div div{
+.card{
     background-color: #003057;
     height: 500px;
     width: 270px;
     border-radius: 20px;
-    gap: 10px;
-    
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 40px;
 }
-.cards-div div img{
-    border-radius: 20px;
+.cards-div .card .card-content p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.cards-div .card .card-content h2{
+    color: #c0eefe;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+.cards-div .card .card-content a{
+    color: #c0eefe;
+    font-size: 14px;
+    line-height: 19.07px;
+    font-weight: 400;
+    margin: 10px;
+    min-height: 58px;
+    text-align: center;
+}
+.cards-div .card .card-content small{
+    font-size: 80%;
+    font-weight: 400;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+}
+.card-content p,
+.card-content h2,
+.card-content a,
+.card-content small {
+    margin: 0;
+    padding: 5px;
+}
+
+.card-img{
+    position: relative;
+}
+.card-img img{
+    border-radius: 20px 20px 0 0;
     width: 270px;
     height: 265px;
+}
+.card-img::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, #003057, rgba(0,0,0,0));
+}
 
-    -webkit-mask-image: linear-gradient(to top, transparent -5%, black 50%);
+.cards-pessoas{
+    width: 80%;
+    margin: 0 auto;
 }
 .cards-pessoas small{
     font-size: 18px;
     line-height: 30px;
     color: #007bff;
     font-weight: 700;
-    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
 }
 .cards-pessoas h2{
     font-weight: 700;
     line-height: 1.2;
     font-size: 2rem; 
-    color: #003057;
-    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+    color: #003057; 
+}
+
+.wizkids{
+    grid-column: 1/-1;
+    background-color: #f1f8fb;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 40px 0;
+}
+.wizkids > div{
+    display: flex;
+    width: 1200px;
+    height: 788px;
+    background-color: white;
+    margin: 0 auto;
+    
+}
+.wizkids > div > div{
+    text-align: center;
+    background-color: bisque;
+    width: 100%;
+    
 }
