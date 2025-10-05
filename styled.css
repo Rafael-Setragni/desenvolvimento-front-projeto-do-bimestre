@@ -513,9 +513,9 @@ main{
     color: #c8d2ff;
 }
 
-/* ============================== */
-/* 📱 Dispositivos grandes (até 1200px) */
-/* ============================== */
+
+
+
 @media (max-width: 1200px) {
     .header-part-baixo nav {
         gap: 30px;
@@ -543,9 +543,8 @@ main{
     }
 }
 
-/* ============================== */
-/* 💻 Tablets (até 992px) */
-/* ============================== */
+
+
 @media (max-width: 992px) {
     .header-part-baixo {
         flex-direction: column;
