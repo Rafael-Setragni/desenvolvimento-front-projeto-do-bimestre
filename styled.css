@@ -191,17 +191,402 @@ main{
     margin-bottom: 40px;
     padding: 40px 0;
 }
-.wizkids > div{
+
+.wizkids > div {
     display: flex;
     width: 1200px;
     height: 788px;
     background-color: white;
     margin: 0 auto;
     
+    /* Adicione estas duas linhas abaixo 👇 */
+    border-radius: 30px; /* bordas arredondadas */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* sombra suave */
 }
+
 .wizkids > div > div{
     text-align: center;
-    background-color: bisque;
-    width: 100%;
-    
+    background-color: rgb(255, 255, 255);
+    width: 100%;    
+}
+
+.botao{
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 25px;
+    border: none;
+    color: #ffffff;
+    background-color: #0023e9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.botao:hover{
+    transform: scale(1.2);
+}
+
+.img-wizkids img{
+    border-radius: 30px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.container-promo {
+  display: flex;
+  max-width: 1200px;
+  margin: 50px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f3f4f6;
+}
+
+.box-form {
+  background-color: #00315c;
+  color: white;
+  padding: 40px;
+  flex: 1;
+}
+
+.titulo-form {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.label-form {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.campo-input,
+.campo-select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.linha-inputs {
+  display: flex;
+  gap: 15px;
+}
+
+.coluna-input {
+  flex: 1;
+}
+
+.grupo-checkbox {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.label-check {
+  display: block;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.check-input {
+  margin-right: 6px;
+}
+
+.link-privacidade {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.link-privacidade:hover {
+  text-decoration: underline;
+}
+
+.botao-form {
+  width: 100%;
+  padding: 15px;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.botao-form:hover {
+  background-color: #00aaff;
+}
+
+.imagem-lateral {
+  flex: 1;
+  background: url("imagens/home-promo-img.png") no-repeat center center/cover;
+}
+
+.secao-cursos {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  padding: 60px 20px;
+  background-color: #f7f9fb;
+}
+
+.subtitulo-cursos {
+  color: #0066cc;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.titulo-cursos {
+  color: #002b5c;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.container-cursos {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card-curso {
+  background-color: #002b5c;
+  border-radius: 20px;
+  width: 260px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.imagem-curso {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-ingles {
+  background-image: url("imagens/ingles.jpeg");
+}
+
+.img-espanhol {
+  background-image: url("imagens/espanhol.jpg");
+}
+
+.img-frances {
+  background-image: url("imagens/frances.jpg");
+}
+
+.img-alemao {
+  background-image: url("imagens/alemanha.jpeg");
+}
+
+.conteudo-curso {
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.icone-bandeira {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.titulo-card {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 5px 0 10px 0;
+}
+
+.texto-card {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.link-curso {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid white;
+  transition: 0.3s;
+}
+
+.link-curso:hover {
+  color: #00aaff;
+  border-bottom-color: #00aaff;
+}
+
+.card-curso:hover .conteudo-curso {
+  background-color: white;
+  color: #002b5c;
+}
+
+.card-curso:hover .link-curso {
+  color: #002b5c;
+  border-bottom-color: #002b5c;
+}
+/*footer*/
+.footer {
+    background-color: #0a1760; /* azul escuro wizard */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    border-bottom: 1px solid #b6c2ff4d;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #e0e6ff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #c8d2ff;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #c8d2ff;
+}
+
+/* ============================== */
+/* 📱 Dispositivos grandes (até 1200px) */
+/* ============================== */
+@media (max-width: 1200px) {
+    .header-part-baixo nav {
+        gap: 30px;
+        width: 75%;
+    }
+
+    .cards-div {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    .wizkids > div {
+        width: 95%;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .container-promo {
+        flex-direction: column;
+    }
+
+    .imagem-lateral {
+        height: 300px;
+    }
+}
+
+/* ============================== */
+/* 💻 Tablets (até 992px) */
+/* ============================== */
+@media (max-width: 992px) {
+    .header-part-baixo {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .header-part-baixo nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .cards-div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wizkids > div {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .box-form {
+        padding: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 30px;
+    }
 }

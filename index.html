@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wisard</title>
+    <title>Wizard</title>
     <link rel="stylesheet" href="styled.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
         </div>
         <div class="header-part-baixo">
             <div class="logo">
-                <img src="imagens/logo-white.png" alt="logo" >
+                <img src="imagens/logo-white.png" alt="logo Wizard">
             </div>
             <nav>
                 <a href="">Cursos</a>
@@ -83,19 +83,179 @@
 
         <div class="wizkids">
             <div>
-                <div><img src="imagens/imagem_wizkids_foto.webp" alt="foto-menino-em-sala-de-aula"></div>
+                <div class="img-wizkids"><img src="imagens/imagem_wizkids_foto.webp" alt="foto-menino-em-sala-de-aula"></div>
                 <div>
-                    <img src="imagens/wizkids-logo.png" alt="logo wizkids">
-                    <h2>Inglês para crianças</h2>
+                    <br> <br>
+                    <img src="imagens/wizkids-logo.png" alt="logo wizkids"> <br>
+                    <h2>Inglês para crianças</h2> 
                     <p>Curso de inglês<br> especialmente para crianças,<br> onde elas aprendem inglês<br> com materiais e atividades<br> especiais, tudo para tornar o<br> estudo do idioma mais leve e<br> divertido.</p>
-                    <button>Conheça a Wizkids</button>
+                    <br> <br>
+                    <button class="botao"><h2>Conheça a Wizkids</h2></button> <br> <br>
                     <img src="imagens/wizkids-criancas-cartum.png" alt="desenho de crianças">
                 </div>
             </div>
         </div>
+
+        <div class="container-promo">
+            <div class="box-form">
+                <h2 class="titulo-form">Quer saber mais sobre as Promoções Wizard</h2>
+
+                <form class="form-wizard">
+                    <label class="label-form">Nome Completo:</label>
+                    <input class="campo-input" type="text" placeholder="Ex.: João Silva" required>
+
+                    <div class="linha-inputs">
+                        <div class="coluna-input">
+                            <label class="label-form">*DDD</label>
+                            <input class="campo-input" type="text" placeholder="*DDD" maxlength="2" required>
+                        </div>
+                        <div class="coluna-input">
+                            <label class="label-form">Digite seu Celular:</label>
+                            <input class="campo-input" type="text" placeholder="00000-0000" required>
+                        </div>
+                    </div>
+
+                    <label class="label-form">Seu E-mail:</label>
+                    <input class="campo-input" type="email" placeholder="seuemail@email.com.br" required>
+
+                    <div class="linha-inputs">
+                        <div class="coluna-input">
+                            <label class="label-form">Estado:</label>
+                            <select class="campo-select" required>
+                                <option>Selecione</option>
+                            </select>
+                        </div>
+                        <div class="coluna-input">
+                            <label class="label-form">Cidade:</label>
+                            <select class="campo-select" required>
+                                <option>Selecione</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label class="label-form">Escolha a Unidade mais Próxima:</label>
+                    <select class="campo-select" required>
+                        <option>Selecione uma escola</option>
+                    </select>
+
+                    <div class="grupo-checkbox">
+                        <label class="label-check">
+                            <input class="check-input" type="checkbox" required>
+                            Declaro ter mais de 12 anos.
+                        </label>
+                        <label class="label-check">
+                            <input class="check-input" type="checkbox">
+                            Concordo em receber e-mails e mensagens através do WhatsApp da Wizard e marcas Pearson.
+                            <a class="link-privacidade" href="#">Ver política de privacidade.</a>
+                        </label>
+                    </div>
+
+                    <button class="botao-form" type="submit">Eu Quero</button>
+                </form>
+            </div>
+
+            <div class="imagem-lateral"></div>
+        </div>
+
+        <div class="secao-cursos">
+            <p class="subtitulo-cursos">Nossos Cursos</p>
+            <h2 class="titulo-cursos">Conheça os 8 cursos de idiomas Wizard</h2>
+
+            <div class="container-cursos">
+                <div class="card-curso">
+                    <div class="imagem-curso img-ingles"></div>
+                    <div class="conteudo-curso">
+                        <img class="icone-bandeira" src="https://flagcdn.com/w40/us.png" alt="bandeira EUA">
+                        <h3 class="titulo-card">Inglês</h3>
+                        <p class="texto-card">
+                            Ao estudar no curso de inglês da Wizard, você desenvolve 4 habilidades na língua inglesa.
+                            São aulas do básico ao avançado e fluência para crianças, adolescentes e adultos.
+                        </p>
+                        <a href="#" class="link-curso">Conheça o curso</a>
+                    </div>
+                </div>
+
+                <div class="card-curso">
+                    <div class="imagem-curso img-espanhol"></div>
+                    <div class="conteudo-curso">
+                        <img class="icone-bandeira" src="https://flagcdn.com/w40/es.png" alt="bandeira Espanha">
+                        <h3 class="titulo-card">Espanhol</h3>
+                        <p class="texto-card">
+                            No curso de espanhol da Wizard, você irá aprender a se comunicar com vários países que têm a língua espanhola como língua materna.
+                        </p>
+                        <a href="#" class="link-curso">Conheça o curso</a>
+                    </div>
+                </div>
+
+                <div class="card-curso">
+                    <div class="imagem-curso img-frances"></div>
+                    <div class="conteudo-curso">
+                        <img class="icone-bandeira" src="https://flagcdn.com/w40/fr.png" alt="bandeira França">
+                        <h3 class="titulo-card">Francês</h3>
+                        <p class="texto-card">
+                            Aprenda a falar francês e desenvolva suas habilidades de escuta, escrita e leitura na língua francesa com metodologia exclusiva Wizard by Pearson.
+                        </p>
+                        <a href="#" class="link-curso">Conheça o curso</a>
+                    </div>
+                </div>
+
+                <div class="card-curso">
+                    <div class="imagem-curso img-alemao"></div>
+                    <div class="conteudo-curso">
+                        <img class="icone-bandeira" src="https://flagcdn.com/w40/de.png" alt="bandeira Alemanha">
+                        <h3 class="titulo-card">Alemão</h3>
+                        <p class="texto-card">
+                            Através do curso de alemão, a Wizard ajuda o estudante a desenvolver suas habilidades para alcançar a fluência na língua alemã.
+                        </p>
+                        <a href="#" class="link-curso">Conheça o curso</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
-    <footer>
-        <h1>shdfbshr</h1>
-    </footer>
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="imagens/logo-white.png" alt="Wizard Logo">
+        </div>
+
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Aprendizagem</h3>
+                <ul>
+                    <li><a href="#">Cursos de Idiomas</a></li>
+                    <li><a href="#">Curso de Inglês Online</a></li>
+                    <li><a href="#">e-Books Gratuitos</a></li>
+                    <li><a href="#">Escolas de Idiomas</a></li>
+                    <li><a href="#">Diferenciais</a></li>
+                    <li><a href="#">Teste de Inglês</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Institucional</h3>
+                <ul>
+                    <li><a href="#">Wizard by Pearson</a></li>
+                    <li><a href="#">Blog Wizard</a></li>
+                    <li><a href="#">Parcerias com Empresas</a></li>
+                    <li><a href="#">Promoções e Descontos</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Projeto Águias</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Dúvidas</h3>
+                <ul>
+                    <li><a href="#">Contato e Trabalhe Conosco</a></li>
+                    <li><a href="#">Como Abrir uma Franquia</a></li>
+                    <li><a href="#">Perguntas Frequentes</a></li>
+                    <li><a href="#">Mapa do Site</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
