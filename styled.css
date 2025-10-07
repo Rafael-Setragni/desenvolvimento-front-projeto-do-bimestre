@@ -199,9 +199,9 @@ main{
     background-color: white;
     margin: 0 auto;
     
-    /* Adicione estas duas linhas abaixo 👇 */
-    border-radius: 30px; /* bordas arredondadas */
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* sombra suave */
+
+    border-radius: 30px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .wizkids > div > div{
@@ -423,20 +423,6 @@ main{
   transition: 0.3s;
 }
 
-.link-curso:hover {
-  color: #00aaff;
-  border-bottom-color: #00aaff;
-}
-
-.card-curso:hover .conteudo-curso {
-  background-color: white;
-  color: #002b5c;
-}
-
-.card-curso:hover .link-curso {
-  color: #002b5c;
-  border-bottom-color: #002b5c;
-}
 /*footer*/
 .footer {
     background-color: #0a1760; /* azul escuro wizard */
